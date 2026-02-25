@@ -1,140 +1,221 @@
-<div class="community-badge1">UNETE A NUESTRA COMUNIDAD Y MANTENTE ACTUALIZADO</div>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro EctoGainz</title>
+    <style>
+        /* Estilo Base EctoGainz */
+        body {
+            background-color: #0a0a0a; /* Negro profundo */
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+ 
+        form {
+            max-width: 600px;
+            width: 100%;
+        }
+ 
+        fieldset {
+            border: 2px solid #333;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #121212;
+        }
+ 
+        legend {
+            color: #ff6600; /* Naranja Marca */
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 1px;
+        }
+ 
+        /* Estilo de los textos y etiquetas */
+        label, .text-label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #ccc;
+        }
+ 
+        /* Campos de Entrada y Selects */
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            background-color: #222;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #fff;
+            box-sizing: border-box; /* Evita que se salga del borde */
+        }
+ 
+        input:focus, select:focus {
+            border-color: #ff6600;
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+        }
+ 
+        /* Estilo para Radio y Checkbox */
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+            accent-color: #ff6600; /* Color naranja para los checks */
+        }
+ 
+        .opcion-group {
+            margin-bottom: 10px;
+            display: block;
+            cursor: pointer;
+        }
+ 
+        /* Botones Especiales */
+        .btn-glow {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+        }
+ 
+        .btn-glow:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.6);
+            background-color: #ff8533;
+        }
+ 
+        .btn-reset {
+            background: transparent;
+            color: #888;
+            border: 1px solid #444;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+ 
+        .btn-reset:hover {
+            color: #fff;
+            border-color: #ff3300;
+        }
+ 
+        .center-btns {
+            text-align: center;
+            border: none;
+            background: transparent;
+        }
+    </style>
+</head>
+<body>
+ 
+<form action="#" method="POST">
     <fieldset>
-        <legend>¿Interesado en recibir novedades de recetas?</legend>
-        Introduce Nombre:
-        <input type="text" name="nombre" placeholder="Introduce nombre" size="25">
-        <br>
-        Introduce tu Apellido:
-        <input type="password" name="password" placeholder="Introduce password" size="25">
-        <br>
-        Introduce tu E-mail:
-        <input type="password" name="password" placeholder="Email" size="40">
-        <br>
-        Sexo<br>
-        <input type="radio" name="sexo" value="masculino">Masculino<br>
-        <input type="radio" name="sexo" value="femenino">Femenino<br>
-        <input type="radio" name="sexo" value="otro">Otro<br>
-        <br>
-        Pais<br>
+        <legend>Ingresa tus datos a continuación</legend>
+       
+        <label>Introduce Nombre:</label>
+        <input type="text" name="nombre" placeholder="Ej: Juan" required>
+       
+        <label>Introduce tu Apellido:</label>
+        <input type="text" name="apellido" placeholder="Ej: Pérez" required>
+       
+        <label>Introduce tu E-mail:</label>
+        <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+       
+        <label>Sexo:</label>
+        <label class="opcion-group"><input type="radio" name="sexo" value="masculino"> Masculino</label>
+        <label class="opcion-group"><input type="radio" name="sexo" value="femenino"> Femenino</label>
+        <label class="opcion-group"><input type="radio" name="sexo" value="otro"> Otro</label>
+       
+        <label>País:</label>
         <select name="Pais">
             <option value="seleccione">Seleccione su país</option>
-<option value="canada">Canadá</option>
-<option value="estados-unidos">Estados Unidos</option>
-<option value="mexico">México</option>
-
-<option value="belice">Belice</option>
-<option value="costa-rica">Costa Rica</option>
-<option value="el-salvador">El Salvador</option>
-<option value="guatemala">Guatemala</option>
-<option value="honduras">Honduras</option>
-<option value="nicaragua">Nicaragua</option>
-<option value="panama">Panamá</option>
-
-<option value="antigua-barbuda">Antigua y Barbuda</option>
-<option value="bahamas">Bahamas</option>
-<option value="barbados">Barbados</option>
-<option value="cuba">Cuba</option>
-<option value="dominica">Dominica</option>
-<option value="granada">Granada</option>
-<option value="haiti">Haití</option>
-<option value="jamaica">Jamaica</option>
-<option value="puerto-rico">Puerto Rico</option>
-<option value="republica-dominicana">República Dominicana</option>
-<option value="san-cristobal-nieves">San Cristóbal y Nieves</option>
-<option value="santa-lucia">Santa Lucía</option>
-<option value="san-vicente-granadinas">San Vicente y las Granadinas</option>
-<option value="trinidad-tobago">Trinidad y Tobago</option>
-
-<option value="argentina">Argentina</option>
-<option value="bolivia">Bolivia</option>
-<option value="brasil">Brasil</option>
-<option value="chile">Chile</option>
-<option value="colombia">Colombia</option>
-<option value="ecuador">Ecuador</option>
-<option value="guyana">Guyana</option>
-<option value="paraguay">Paraguay</option>
-<option value="peru">Perú</option>
-<option value="surinam">Surinam</option>
-<option value="uruguay">Uruguay</option>
-<option value="venezuela">Venezuela</option>
+            <optgroup label="Norteamérica">
+                <option value="canada">Canadá</option>
+                <option value="estados-unidos">Estados Unidos</option>
+                <option value="mexico">México</option>
+            </optgroup>
+            <optgroup label="Centroamérica">
+                <option value="costa-rica">Costa Rica</option>
+                <option value="panama">Panamá</option>
+                <option value="guatemala">Guatemala</option>
+                </optgroup>
+            <optgroup label="Sudamérica">
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="chile">Chile</option>
+                <option value="peru">Perú</option>
+                <option value="venezuela">Venezuela</option>
+            </optgroup>
         </select>
-        <br>
-        ¿En qué etapa de tu transformación te encuentras?:<br>
-        <input type="checkbox" name="aficion1" value="amateur">Amateur (Empiezo desde cero)<br>
-        <input type="checkbox" name="aficion2" value="experiencia">En entrenamiento (Ya soy constante)<br>
-        <br>
+ 
+        <label>¿En qué etapa de tu transformación te encuentras?:</label>
+        <label class="opcion-group"><input type="checkbox" name="etapa" value="amateur"> Amateur (Empiezo desde cero)</label>
+        <label class="opcion-group"><input type="checkbox" name="etapa" value="experiencia"> En entrenamiento (Ya soy constante)</label>
     </fieldset>
-
-        <!--datos académicos-->
+ 
     <fieldset>
-        <legend>Datos Antopometricos</legend>
-        <br>
-        Peso Actual<br>
-        <select name="Pais">
+        <legend>Tu Radiografía Actual</legend>
+       
+        <label>Peso Actual:</label>
+        <select name="peso">
             <option value="seleccione">Seleccione su peso</option>
-    <option value="40">40 kg o menos</option>
-    <option value="45">45 kg</option>
-    <option value="50">50 kg</option>
-    <option value="55">55 kg</option>
-    <option value="60">60 kg</option>
-    <option value="65">65 kg</option>
-    <option value="70">70 kg</option>
-    <option value="75">75 kg</option>
-    <option value="80">80 kg</option>
-    <option value="85">85 kg</option>
-    <option value="90">90 kg</option>
-    <option value="95">95 kg</option>
-    <option value="100">100 kg o más</option>
-</select>
-<br>
-Estatura Actual (cm):<br>
-<select name="estatura" id="estatura">
-    <option value="seleccione">Seleccione su estatura</option>
-    <option value="140">Menos de 140 cm</option>
-    <option value="150">150 cm</option>
-    <option value="155">155 cm</option>
-    <option value="160">160 cm</option>
-    <option value="165">165 cm</option>
-    <option value="170">170 cm</option>
-    <option value="175">175 cm</option>
-    <option value="180">180 cm</option>
-    <option value="185">185 cm</option>
-    <option value="190">190 cm</option>
-    <option value="195">195 cm</option>
-    <option value="200">200 cm</option>
-    <option value="210">Más de 200 cm</option>
-</select>
-<br>
-Edad:<br>
-<select name="edad" id="edad">
-    <option value="seleccione">Seleccione su edad</option>
-    <option value="menos-18">Menos de 18 años</option>
-    <option value="18">18 años</option>
-    <option value="19">19 años</option>
-    <option value="20">20 años</option>
-    <option value="21">21 años</option>
-    <option value="22">22 años</option>
-    <option value="23">23 años</option>
-    <option value="24">24 años</option>
-    <option value="25">25 años</option>
-    <option value="26-30">26 - 30 años</option>
-    <option value="31-35">31 - 35 años</option>
-    <option value="36-40">36 - 40 años</option>
-    <option value="41-50">41 - 50 años</option>
-    <option value="mas-50">Más de 50 años</option>
-</select>
-<br>
-¿Cual es tu mayor obstaculo?:<br>
-        <input type="checkbox" name="aficion1" value="apetito">Falta de apetito<br>
-        <input type="checkbox" name="aficion2" value="tiempo">Falta de tiempo para codinar<br>
-        <input type="checkbox" name="aficion1" value="desconocimiento">No se que ejercicios hacer<br>
-        <input type="checkbox" name="aficion1" value="resultados">Entreno pero no veo cambios<br>
+            <option value="40">40 kg o menos</option>
+            <option value="50">50 kg</option>
+            <option value="60">60 kg</option>
+            <option value="70">70 kg</option>
+            <option value="80">80 kg</option>
+            <option value="90">90 kg o más</option>
+        </select>
+ 
+        <label>Estatura Actual (cm):</label>
+        <select name="estatura">
+            <option value="seleccione">Seleccione su estatura</option>
+            <option value="150">150 cm</option>
+            <option value="160">160 cm</option>
+            <option value="170">170 cm</option>
+            <option value="180">180 cm</option>
+            <option value="190">190 cm</option>
+        </select>
+ 
+        <label>Edad:</label>
+        <select name="edad">
+            <option value="seleccione">Seleccione su edad</option>
+            <option value="18-25">18 - 25 años</option>
+            <option value="26-35">26 - 35 años</option>
+            <option value="36+">Más de 36 años</option>
+        </select>
+ 
+        <label>¿Cuál es tu mayor obstáculo?:</label>
+        <label class="opcion-group"><input type="checkbox" name="obstaculo" value="apetito"> Falta de apetito</label>
+        <label class="opcion-group"><input type="checkbox" name="obstaculo" value="tiempo"> Falta de tiempo para cocinar</label>
+        <label class="opcion-group"><input type="checkbox" name="obstaculo" value="desconocimiento"> No sé qué ejercicios hacer</label>
+        <label class="opcion-group"><input type="checkbox" name="obstaculo" value="resultados"> Entreno pero no veo cambios</label>
+    </fieldset>
+ 
+    <fieldset class="center-btns">
+        <input type="submit" value="¡INICIAR CAMBIO! 🔥" class="btn-glow">
         <br>
- <fieldset>
-        <input type="submit" value="Enviar datos">
-        <input type="reset" value="Borrar datos">
-            </fieldset>
-        </form>
+        <input type="reset" value="Borrar todo" class="btn-reset">
+        <br><br>
+        <a href="../index.html" class="btn-glow" style="background: #333;">IR A INICIO</a>
+    </fieldset>
+</form>
+ 
 </body>
 </html>
