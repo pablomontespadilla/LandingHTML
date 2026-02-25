@@ -423,7 +423,7 @@ nav a[href="index.html"] {
     }
 
     .transformation-hero {
-        height: 30vh; /* Reducimos la altura del slider en móvil */
+        height: 35vh; /* Reducimos la altura del slider en móvil */
         margin-top: 0;
     }
 
