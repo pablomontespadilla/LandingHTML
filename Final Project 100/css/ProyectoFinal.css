@@ -423,12 +423,12 @@ nav a[href="index.html"] {
     }
 
     .transformation-hero {
-        height: 45vh; /* Reducimos la altura del slider en móvil */
+        height: 30vh; /* Reducimos la altura del slider en móvil */
         margin-top: 0;
     }
 
     .carousel-item {
-        height: 70vh;
+        height: 40vh;
     }
 
     .info-content h2 {
