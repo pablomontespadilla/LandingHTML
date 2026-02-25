@@ -212,14 +212,17 @@ nav a[href="index.html"] {
 .carousel-track {
     display: flex;
     height: 100%;
+    width: 500%; /* 5 imágenes x 100% cada una */
+    animation: slide-animation 15s infinite ease-in-out; /* 15s total (3s por imagen) */
 }
 
 .carousel-item {
-    min-width: 100vw;
+    width: 100vw; /* Cada item ocupa exactamente el ancho de pantalla */
     height: 100vh;
-    scroll-snap-align: start;
-    position: relative;
+    flex-shrink: 0;
 }
+
+
 
 .carousel-item img {
     width: 100%;
@@ -229,6 +232,19 @@ nav a[href="index.html"] {
     display: block;
 }
 
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    15% { transform: translateX(0); }     /* Imagen 1 */
+    20% { transform: translateX(-20%); }   /* Transición */
+    35% { transform: translateX(-20%); }   /* Imagen 2 */
+    40% { transform: translateX(-40%); }   /* Transición */
+    55% { transform: translateX(-40%); }   /* Imagen 3 */
+    60% { transform: translateX(-60%); }   /* Transición */
+    75% { transform: translateX(-60%); }   /* Imagen 4 */
+    80% { transform: translateX(-80%); }   /* Transición */
+    95% { transform: translateX(-80%); }   /* Imagen 5 */
+    100% { transform: translateX(0); }     /* Regreso al inicio */
+}
 /* Capa de texto fija sobre el slider */
 .hero-overlay-content {
     position: absolute;
@@ -363,4 +379,72 @@ nav a[href="index.html"] {
     justify-content: center;
     align-items: center;
     
+}
+/* TABLETS (Máximo 1024px) */
+@media (max-width: 1024px) {
+    .main-header {
+        padding: 1rem 3%;
+    }
+    
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+        gap: 15px;
+    }
+
+    .category-block {
+        padding: 25px;
+    }
+}
+
+/* CELULARES (Máximo 768px) */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* Título arriba, menú abajo */
+        text-align: center;
+        padding: 1rem;
+        position: relative; /* Para que no tape el contenido en móvil */
+        margin-bottom: -60px; /* Ajuste para el hero */
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    .hero-overlay-content h1 {
+        font-size: 2.2rem; /* Texto más pequeño en móvil */
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+    }
+
+    .transformation-hero {
+        height: 70vh; /* Reducimos la altura del slider en móvil */
+        margin-top: 0;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .info-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Ajuste fino para pantallas muy pequeñas (iPhone SE, etc) */
+@media (max-width: 400px) {
+    .hero-overlay-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .scroll-btn {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
 }
