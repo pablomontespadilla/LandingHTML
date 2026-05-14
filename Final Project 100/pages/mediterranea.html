@@ -1,33 +1,145 @@
-<div class="recipe-container" style="background:#121212; color:white; padding:20px; font-family: sans-serif;">
-    
-    <header style="text-align:center;">
-        <h1 style="color:#ff6600; text-transform:uppercase;">Mediterránea Power</h1>
-        <p style="color:#888;">Tiempo: 8 min | Dificultad: Baja</p>
-    </header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta Mediterránea Power</title>
+    <style>
+        /* Definición de variables para consistencia total */
+        :root {
+            --bg-dark: #121212;
+            --accent-orange: #ff6600;
+            --text-white: #ffffff;
+            --text-gray: #b0b0b0;
+            --divider: #333;
+        }
 
-    <hr style="border:0; border-top:1px solid #333; margin:20px 0;">
+        /* Estilo para que toda la pantalla tenga el mismo color */
+        html, body {
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
+            color: var(--text-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-    <section>
-        <h3 style="color:#ff6600;">🛒 INGREDIENTES</h3>
-        <ul style="line-height:1.8;">
-            <li>Pasta integral (100g)</li>
-            <li>1/2 lata de garbanzos (lavados)</li>
-            <li>Queso Feta al gusto</li>
-            <li>Aceitunas negras y tomates cherry</li>
-        </ul>
-    </section>
+        .recipe-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            /* Tamaño de letra más grande */
+            font-size: 1.25rem; 
+            line-height: 1.6;
+        }
 
-    <section style="margin-top:30px;">
-        <h3 style="color:#ff6600;">🔥 PASOS A SEGUIR</h3>
-        <ol style="line-height:1.8;">
-            <li><strong>Hervir:</strong> Cocina la pasta en agua con sal según el empaque.</li>
-            <li><strong>Mezclar:</strong> En un bol grande, añade los garbanzos y los vegetales.</li>
-            <li><strong>Integrar:</strong> Escurre la pasta y mézclala con el resto de ingredientes.</li>
-            <li><strong>Toque Final:</strong> Desmenuza el queso feta encima y añade aceite de oliva.</li>
-        </ol>
-    </section>
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-    <div style="text-align:center; margin-top:40px;">
-        <a href="../index.html" style="color:#ff6600; text-decoration:none; font-weight:bold;">← Volver al Menú</a>
+        h1 {
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            margin: 0;
+        }
+
+        .recipe-meta {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--divider);
+            margin: 30px 0;
+        }
+
+        h3 {
+            color: var(--accent-orange);
+            font-size: 1.6rem;
+            margin-top: 40px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
+
+        .back-link {
+            color: var(--accent-orange);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            text-shadow: 0 0 8px var(--accent-orange);
+            padding-left: 10px;
+        }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 600px) {
+            .recipe-container {
+                padding: 20px;
+                font-size: 1.15rem; /* Ajuste sutil para pantallas pequeñas */
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-container">
+        <header>
+            <h1>Mediterránea Power</h1>
+            <p class="recipe-meta">Tiempo: 8 min | Dificultad: Baja</p>
+        </header>
+
+        <hr>
+
+        <section>
+            <h3>🛒 INGREDIENTES</h3>
+            <ul>
+                <li>Pasta integral (100g)</li>
+                <li>1/2 lata de garbanzos (lavados)</li>
+                <li>Queso Feta al gusto</li>
+                <li>Aceitunas negras y tomates cherry</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🔥 PASOS A SEGUIR</h3>
+            <ol>
+                <li><strong>Hervir:</strong> Cocina la pasta en agua con sal según el empaque.</li>
+                <li><strong>Mezclar:</strong> En un bol grande, añade los garbanzos y los vegetales.</li>
+                <li><strong>Integrar:</strong> Escurre la pasta y mézclala con el resto de ingredientes.</li>
+                <li><strong>Toque Final:</strong> Desmenuza el queso feta encima y añade aceite de oliva.</li>
+            </ol>
+        </section>
+
+        <div class="footer-nav">
+            <a href="../index.html" class="back-link">← Volver al Menú</a>
+        </div>
     </div>
-</div>
+
+</body>
+</html>

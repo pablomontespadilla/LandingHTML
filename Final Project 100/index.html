@@ -12,7 +12,6 @@
     <h1>ECTO<span>GAINZ</span></h1>
     <nav>
         <a href="index.html">Inicio</a> 
-        <a href="#volumen">Volumen</a>
         <a href="#express">Express</a>
         <a href="#altadensidad">Alta Densidad</a>
     </nav>
@@ -20,7 +19,6 @@
 
 <section class="transformation-hero">
     <div class="hero-overlay-content">
-
     </div>
 
     <div class="carousel-container" id="autoCarousel">
@@ -59,32 +57,10 @@
 </section>
 
     </main>
-<!--
-<script>
-    const track = document.getElementById('autoCarousel');
-    let index = 0;
-    const items = document.querySelectorAll('.carousel-item');
-
-    function autoSlide() {
-        index++;
-        if (index >= items.length) index = 0;
-        
-        track.scrollTo({
-            left: items[index].offsetLeft,
-            behavior: 'smooth'
-        });
-    }
-
-    // Cambia la imagen cada 3 segundos
-    setInterval(autoSlide, 3000);
-</script>
--->
 
 
-<section class="category-block section-express">
-
+<section id="express" class="category-block section-express">
 <h2 class="category-title">⚡ ¡Para YA! (Comidas Express)</h2>
-
 <p class="section-desc">Menos de 10 minutos. Abre, mezcla y pa' dentro.</p>
 
 
@@ -145,7 +121,7 @@
 
 
 
-<section class="category-block section-heavy">
+<section id="altadensidad" class="category-block section-heavy">
 <h2 class="category-title">💣 Bombas Calóricas (Alta Densidad)</h2>
 <p class="section-desc">Aquí no jugamos. Si quieres dejar de ser una "viga", dale aquí.</p>
 <div class="recipe-grid">
@@ -211,6 +187,8 @@
         <a href="./pages/formulario.html" class="formulario">INICIAR MI TRANSFORMACIÓN</a>
     </div>
     <br>
+    <br>
+    <a href="#" class="btn-top" id="btnTop">↑</a>
 </main>
 
 

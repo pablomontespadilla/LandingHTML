@@ -1,30 +1,154 @@
-<header style="text-align:center;">
-    <h1 style="color:#f1c40f; text-transform:uppercase;">Couscous Relámpago</h1>
-    <p style="color:#888;">Tiempo: 5 min | Dificultad: Muy Baja</p>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couscous Relámpago - Receta</title>
+    <style>
+        /* Variables de diseño unificado */
+        :root {
+            --bg-dark: #121212;
+            --accent-yellow: #f1c40f;
+            --text-white: #ffffff;
+            --text-gray: #b0b0b0;
+            --divider: #333;
+        }
 
-<hr style="border:0; border-top:1px solid #333; margin:20px 0;">
+        /* Aplicar color a toda la pantalla */
+        html, body {
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
+            color: var(--text-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<section>
-    <h3 style="color:#f1c40f;">🛒 INGREDIENTES</h3>
-    <ul style="line-height:1.8;">
-        <li>Couscous seco (1/2 taza)</li>
-        <li>Agua hirviendo o caldo (1/2 taza)</li>
-        <li>Pasas y almendras laminadas</li>
-        <li>Pimiento rojo picado muy fino</li>
-        <li>Cucharadita de mantequilla o AOVE</li>
-    </ul>
-</section>
+        .recipe-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            /* Tamaño de letra optimizado */
+            font-size: 1.25rem; 
+            line-height: 1.6;
+        }
 
-<section style="margin-top:30px;">
-    <h3 style="color:#f1c40f;">🔥 PASOS A SEGUIR</h3>
-    <ol style="line-height:1.8;">
-        <li><strong>Hidratar:</strong> Pon el couscous en un bol, vierte el agua hirviendo y tapa durante 3 minutos.</li>
-        <li><strong>Soltar:</strong> Destapa y remueve con un tenedor para separar los granos con la mantequilla.</li>
-        <li><strong>Mezclar:</strong> Añade las pasas, almendras y el pimiento crudo (para el toque crunch).</li>
-        <li><strong>Aliñar:</strong> Un toque de sal, pimienta y opcionalmente un poco de curry o comino.</li>
-    </ol>
-</section>
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-<div style="text-align:center; margin-top:40px;">
-    <a href="../index.html" style="color:#f1c40f; text-decoration
+        h1 {
+            color: var(--accent-yellow);
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .recipe-meta {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--divider);
+            margin: 30px 0;
+        }
+
+        h3 {
+            color: var(--accent-yellow);
+            font-size: 1.6rem;
+            margin-top: 40px;
+            border-bottom: 1px solid var(--divider);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: var(--accent-yellow);
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
+
+        .back-link {
+            color: var(--accent-yellow);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            text-shadow: 0 0 10px var(--accent-yellow);
+            padding-left: 10px;
+        }
+
+        /* Media Query para pantallas de móviles */
+        @media (max-width: 600px) {
+            .recipe-container {
+                padding: 20px;
+                font-size: 1.15rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-container">
+        <header>
+            <h1>Couscous Relámpago</h1>
+            <p class="recipe-meta">Tiempo: 5 min | Dificultad: Muy Baja</p>
+        </header>
+
+        <hr>
+
+        <section>
+            <h3>🛒 INGREDIENTES</h3>
+            <ul>
+                <li>Couscous seco (1/2 taza)</li>
+                <li>Agua hirviendo o caldo (1/2 taza)</li>
+                <li>Pasas y almendras laminadas</li>
+                <li>Pimiento rojo picado muy fino</li>
+                <li>Cucharadita de mantequilla o AOVE</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🔥 PASOS A SEGUIR</h3>
+            <ol>
+                <li><strong>Hidratar:</strong> Pon el couscous en un bol, vierte el agua hirviendo y tapa durante 3 minutos.</li>
+                <li><strong>Soltar:</strong> Destapa y remueve con un tenedor para separar los granos con la mantequilla.</li>
+                <li><strong>Mezclar:</strong> Añade las pasas, almendras y el pimiento crudo (para el toque crunch).</li>
+                <li><strong>Aliñar:</strong> Un toque de sal, pimienta y opcionalmente un poco de curry o comino.</li>
+            </ol>
+        </section>
+
+        <div class="footer-nav">
+            <a href="../index.html" class="back-link">← Volver al Menú</a>
+        </div>
+    </div>
+
+</body>
+</html>

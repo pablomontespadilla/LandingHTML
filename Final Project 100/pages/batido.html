@@ -1,31 +1,154 @@
-<header style="text-align:center;">
-    <h1 style="color:#d35400; text-transform:uppercase;">Batido Avena-Cacahuate</h1>
-    <p style="color:#888;">Tiempo: 3 min | Dificultad: Muy Baja</p>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batido Avena-Cacahuate - Receta</title>
+    <style>
+        /* Variables de diseño unificado */
+        :root {
+            --bg-dark: #121212;
+            --accent-orange: #d35400;
+            --text-white: #ffffff;
+            --text-gray: #b0b0b0;
+            --divider: #333;
+        }
 
-<hr style="border:0; border-top:1px solid #333; margin:20px 0;">
+        /* Aplicar color a toda la pantalla */
+        html, body {
+            background-color: var(--bg-dark);
+            margin: 0;
+            padding: 0;
+            color: var(--text-white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-<section>
-    <h3 style="color:#d35400;">🛒 INGREDIENTES</h3>
-    <ul style="line-height:1.8;">
-        <li>Leche (vaca, avena o almendra) (250ml)</li>
-        <li>3 cucharadas de copos de avena</li>
-        <li>1 cucharada de crema de cacahuate natural</li>
-        <li>1 plátano (banana) maduro</li>
-        <li>Opcional: Canela en polvo o miel</li>
-    </ul>
-</section>
+        .recipe-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            /* Tamaño de letra optimizado */
+            font-size: 1.25rem; 
+            line-height: 1.6;
+        }
 
-<section style="margin-top:30px;">
-    <h3 style="color:#d35400;">🔥 PASOS A SEGUIR</h3>
-    <ol style="line-height:1.8;">
-        <li><strong>Base:</strong> Vierte la leche y el plátano troceado en el vaso de la licuadora.</li>
-        <li><strong>Cuerpo:</strong> Añade los copos de avena y la crema de cacahuate.</li>
-        <li><strong>Licuar:</strong> Tritura a máxima potencia hasta que la textura sea homogénea y cremosa.</li>
-        <li><strong>Servir:</strong> Espolvorea un poco de canela por encima para un aroma extra.</li>
-    </ol>
-</section>
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-<div style="text-align:center; margin-top:40px;">
-    <a href="../index.html" style="color:#d35400; text-decoration:none; font-weight:bold;">← Volver al Menú</a>
-</div>
+        h1 {
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            font-size: 2.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .recipe-meta {
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--divider);
+            margin: 30px 0;
+        }
+
+        h3 {
+            color: var(--accent-orange);
+            font-size: 1.6rem;
+            margin-top: 40px;
+            border-bottom: 1px solid var(--divider);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        strong {
+            color: var(--accent-orange);
+        }
+
+        .footer-nav {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
+
+        .back-link {
+            color: var(--accent-orange);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            text-shadow: 0 0 10px var(--accent-orange);
+            padding-left: 10px;
+        }
+
+        /* Media Query para pantallas de móviles */
+        @media (max-width: 600px) {
+            .recipe-container {
+                padding: 20px;
+                font-size: 1.15rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-container">
+        <header>
+            <h1>Batido Avena-Cacahuate</h1>
+            <p class="recipe-meta">Tiempo: 3 min | Dificultad: Muy Baja</p>
+        </header>
+
+        <hr>
+
+        <section>
+            <h3>🛒 INGREDIENTES</h3>
+            <ul>
+                <li>Leche (vaca, avena o almendra) (250ml)</li>
+                <li>3 cucharadas de copos de avena</li>
+                <li>1 cucharada de crema de cacahuate natural</li>
+                <li>1 plátano (banana) maduro</li>
+                <li>Opcional: Canela en polvo o miel</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>🔥 PASOS A SEGUIR</h3>
+            <ol>
+                <li><strong>Base:</strong> Vierte la leche y el plátano troceado en el vaso de la licuadora.</li>
+                <li><strong>Cuerpo:</strong> Añade los copos de avena y la crema de cacahuate.</li>
+                <li><strong>Licuar:</strong> Tritura a máxima potencia hasta que la textura sea homogénea y cremosa.</li>
+                <li><strong>Servir:</strong> Espolvorea un poco de canela por encima para un aroma extra.</li>
+            </ol>
+        </section>
+
+        <div class="footer-nav">
+            <a href="../index.html" class="back-link">← Volver al Menú</a>
+        </div>
+    </div>
+
+</body>
+</html>
